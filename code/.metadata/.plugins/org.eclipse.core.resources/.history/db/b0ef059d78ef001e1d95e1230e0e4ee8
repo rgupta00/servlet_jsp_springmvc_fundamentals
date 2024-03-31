@@ -1,0 +1,25 @@
+package com.busycoder.bookapp.config;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+//this class is used to bootstrap ur project
+public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer{
+
+	//root context scope
+	@Override
+	protected Class<?>[] getRootConfigClasses() {
+		return null;
+	}
+
+	//for servlet specific context 
+	@Override
+	protected Class<?>[] getServletConfigClasses() {
+		return new Class[] {WebConfig.class};
+	}
+
+	@Override
+	protected String[] getServletMappings() {
+		return new String[] {"/"};
+		
+	}
+
+}

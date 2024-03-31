@@ -1,0 +1,5 @@
+package com.busycoder.bookapp.config;
+
+public class WebConfig {
+
+}

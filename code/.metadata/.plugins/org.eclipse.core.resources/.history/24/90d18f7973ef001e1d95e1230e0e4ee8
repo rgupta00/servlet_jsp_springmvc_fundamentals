@@ -1,0 +1,16 @@
+package com.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+//Back controller BL
+@Controller
+public class HelloController {
+
+	public ModelAndView hello(ModelAndView mv) {
+		mv.setViewName("show");
+		mv.addObject("data", "You all are champs!");
+		
+		return mv;
+	}
+}

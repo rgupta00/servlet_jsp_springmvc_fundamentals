@@ -1,0 +1,16 @@
+package com.busycoder;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+public class SCL implements ServletContextListener {
+
+    public void contextInitialized(ServletContextEvent sce)  { 
+        System.out.println("contextInitialized");
+    }
+	
+    public void contextDestroyed(ServletContextEvent sce)  { 
+        System.out.println("contextDestroyed");
+   }
+
+}

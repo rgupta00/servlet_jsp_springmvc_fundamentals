@@ -1,0 +1,5 @@
+package com.busycoder.bookapp.interceptors;
+
+public class DemoInterceptor {
+
+}
